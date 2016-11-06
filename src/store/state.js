@@ -18,7 +18,7 @@ const state = {
   tabs: [{
     name: '首页',
     closable: false,
-    route: 'Home'
+    route: 'home'
   }]
 }
 

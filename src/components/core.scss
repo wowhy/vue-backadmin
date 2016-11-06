@@ -1,9 +1,12 @@
-$fa-font-path: '~font-awesome/fonts/';
-$family-primary: "Microsoft YaHei",  sans-serif;
-@import '~animate.css';
-@import '~font-awesome/scss/font-awesome';
-@import '~bulma';
-
-html, body{
-    font-family: $family-primary;
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.animated-width {
+  transition: width .3s ease-in-out;
+}
+.animated-marginleft {
+  transition: margin-left .3s ease-in-out;
 }

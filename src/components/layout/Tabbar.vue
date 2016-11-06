@@ -1,13 +1,13 @@
 <template>
-  <div class="app-tabbar">
-    <div class="tabs">
-      <ul class="is-left">
-        <li v-for="tab in tabs" :class="{ 'is-active': tab.route === routeName }">
-          <a @click="activeTab(tab)">{{tab.name}}</a>
-        </li>
-      </ul>
-    </div>
-  </div>   
+	<div class="app-tabbar">
+		<div class="tabs">
+			<ul class="is-left">
+				<li v-for="tab in tabs" :class="{ 'is-active': tab.route === routeName }">
+					<a @click="activeTab(tab)">{{tab.name}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -56,13 +56,5 @@
 </script>
 
 <style lang="scss">
-  @import '~bulma/sass/utilities/variables';
-  @import '~bulma/sass/utilities/mixins';
-  @import '../variables';
-  .app-tabbar {
-    @include mobile() {
-      display: none;
-    }
-  }
-
+	.app-tabbar {}
 </style>

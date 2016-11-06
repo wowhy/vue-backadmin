@@ -1,35 +1,5 @@
-import './components/core.scss'
-import 'js-polyfills/dom'
-import 'js-polyfills/es6'
-import 'js-polyfills/es2016'
+import { app, store } from './app'
 
-import Vue from 'vue'
-import App from './App'
+store.commit('authed', true)
 
-import Router from 'vue-router'
-import Resource from 'vue-resource'
-
-import { sync } from 'vuex-router-sync'
-import store from './store'
-import routes from './routes'
-import auth from './utils/auth'
-
-Vue.use(Router)
-Vue.use(Resource)
-
-let router = new Router({
-  mode: 'history',
-  linkActiveClass: 'is-active',
-  routes: routes
-})
-
-store.commit('authed', auth.sync())
-
-sync(store, router)
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  render: (h) => h(App)
-})
+app.$mount('#app')

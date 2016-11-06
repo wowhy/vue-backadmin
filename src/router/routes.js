@@ -1,6 +1,6 @@
-import Home from './views/Home'
-import Demo1 from './views/Demo1'
-import Demo2 from './views/Demo2'
+import Home from 'views/Home'
+import Demo1 from 'views/Demo1'
+import Demo2 from 'views/Demo2'
 
 export default [
   { name: 'home', path: '/', component: Home },
